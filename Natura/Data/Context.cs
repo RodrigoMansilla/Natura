@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Natura.Models;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace Natura.Data
         {
 
         }
-       // public DbSet<IngresoGasto> IngresosGastos { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Categoria> Categorias{ get; set; }
+        public DbSet<Linea> Lineas { get; set; }
     }
 }

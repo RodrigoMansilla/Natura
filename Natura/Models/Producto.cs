@@ -11,16 +11,19 @@ namespace Natura.Models
         [Key]
         public int IdProducto { get; set; }
 
-        //[Required]
-        //[StringLength(100, MinimumLength = 3)]
-        //public string Nombre { get; set; }
+        [Required]
+        [StringLength(100, MinimumLength = 3)]
+        public string Nombre { get; set; }
 
-        //[Required]
-        //[StringLength(50, MinimumLength = 3)]
-        //public string Categoria { get; set; }
+        [Required]
+        public int Codigo { get; set; }
 
-        //[Required]
-        //public int Codigo { get; set; }
+        public int IdCategoria { get; set; }
+        public Categoria Categoria { get; set; }
+
+        public int IdLinea { get; set; }
+        public Linea Linea { get; set; }
+
 
 
     }
