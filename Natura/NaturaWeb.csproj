@@ -206,10 +206,16 @@
     <Compile Include="Migrations\202104110943426_Producto-Categoria-Linea.designer.cs">
       <DependentUpon>202104110943426_Producto-Categoria-Linea.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104170522009_ProductoEncasa-Vencimiento.cs" />
+    <Compile Include="Migrations\202104170522009_ProductoEncasa-Vencimiento.Designer.cs">
+      <DependentUpon>202104170522009_ProductoEncasa-Vencimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Vencimientos.cs" />
     <Compile Include="Models\Linea.cs" />
     <Compile Include="Models\Producto.cs" />
+    <Compile Include="Models\ProductoEnCasa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +230,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\CSS\_MenuIzquierdo.css" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -251,6 +258,7 @@
     <Content Include="Views\Productoes\Details.cshtml" />
     <Content Include="Views\Productoes\Edit.cshtml" />
     <Content Include="Views\Productoes\Index.cshtml" />
+    <Content Include="Views\Shared\_MenuIz.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -273,6 +281,9 @@
     <EmbeddedResource Include="Migrations\202104110943426_Producto-Categoria-Linea.resx">
       <DependentUpon>202104110943426_Producto-Categoria-Linea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104170522009_ProductoEncasa-Vencimiento.resx">
+      <DependentUpon>202104170522009_ProductoEncasa-Vencimiento.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -292,7 +303,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58132</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44374/</IISUrl>
+          <IISUrl>https://localhost:44373/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
