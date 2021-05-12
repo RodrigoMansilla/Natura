@@ -16,5 +16,9 @@ namespace Natura.Data
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias{ get; set; }
         public DbSet<Linea> Lineas { get; set; }
+
+        public DbSet<ProductoEnCasa> ProductsoEnCasa { get; set; }
+        public DbSet<Vencimientos> Vencimientos { get; set; }
+
     }
 }

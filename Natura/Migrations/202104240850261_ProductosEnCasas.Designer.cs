@@ -7,13 +7,13 @@ namespace Natura.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class ProductoEncasaVencimiento : IMigrationMetadata
+    public sealed partial class ProductosEnCasas : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ProductoEncasaVencimiento));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ProductosEnCasas));
         
         string IMigrationMetadata.Id
         {
-            get { return "202104170522009_ProductoEncasa-Vencimiento"; }
+            get { return "202104240850261_ProductosEnCasas"; }
         }
         
         string IMigrationMetadata.Source

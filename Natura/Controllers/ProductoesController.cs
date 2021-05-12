@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Natura.Data;
 using Natura.Models;
+using Natura.ViewModels;
 
 namespace Natura.Controllers
 {
@@ -34,7 +35,18 @@ namespace Natura.Controllers
             {
                 return HttpNotFound();
             }
-            return View(producto);
+            Categoria categoria = db.Categorias.Find(producto.IdCategoria);
+            Linea linea = db.Lineas.Find(producto.IdLinea);
+
+            return View(new ProductoViewModel()
+            {
+                IdProducto = producto.IdProducto,
+                Nombre = producto.Nombre,
+                Codigo = producto.Codigo,
+                NombreCategoria = categoria.Nombre,
+                NombreLinea = linea.Nombre
+            });
+            
         }
 
         // GET: Productoes/Create

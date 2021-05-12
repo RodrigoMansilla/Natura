@@ -1,45 +1,45 @@
-﻿@model Natura.Models.Producto
+﻿@model Natura.ViewModels.ProductoViewModel
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalles";
 }
 
 <h2>Details</h2>
 
 <div>
-    <h4>Producto</h4>
+    <h4>Productos</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Categoria.Nombre)
+            Nombre
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Categoria.Nombre)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Linea.Nombre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Linea.Nombre)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Nombre)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Codigo)
+            Codigo
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            Categoria
+        </dt>
+        
+        <dd>
+            @Html.DisplayFor(model => model.NombreCategoria)
+        </dd>
+
+        <dt>
+            Linea
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreLinea)
         </dd>
 
     </dl>
